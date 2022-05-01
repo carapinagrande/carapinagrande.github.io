@@ -4,6 +4,9 @@ import vuetify from '@vuetify/vite-plugin'
 export default defineNuxtConfig({
   css: ['vuetify/styles'],
   ssr: false, // Disable Server Side rendering
+  generate: {
+    subFolders: false
+  },
   target: 'static',
   vite: {
     plugins: [
