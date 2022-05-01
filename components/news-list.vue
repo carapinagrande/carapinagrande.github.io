@@ -17,12 +17,12 @@
         target="blank"
       >
         <v-list-item-header>
-          <v-list-item-title v-if="element.item.keywords">
+          <v-list-item-subtitle v-if="element.item.keywords">
             <strong v-for="keyword, i in element.item.keywords" :key="i">{{keyword}}</strong>
-          </v-list-item-title>
-          <v-list-item-subtitle>
-            {{element.item.name}}
           </v-list-item-subtitle>
+          <v-list-item-title>
+            {{element.item.name}}
+          </v-list-item-title>
         </v-list-item-header>
       </v-list-item>
     </v-list>
@@ -36,3 +36,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.v-list-item-title {
+  white-space: normal;
+  line-height: 1.2rem;
+}
+</style>

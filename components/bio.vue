@@ -67,8 +67,9 @@ export default {
         {
           title: "Linhas de Ônibus", subtitle: "Transcol", 
           itinerary: [
-            {name: "844A", url: "https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-844_A-Vit%C3%B3ria-4794-1058372-47908838-0"},
-            {name: "844B", url: "https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-844_B-Vit%C3%B3ria-4794-1058372-47908839-0"},
+            {name: "844A", url: "https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-844_A-Vit%C3%B3ria-4794-1058372-47908838-1"},
+            {name: "844B", url: "https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-844_B-Vit%C3%B3ria-4794-1058372-47908839-1"},
+            {name: "597", url: "https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-597-Vit%C3%B3ria-4794-1058372-1776532-0"},
           ]
         }
       ],

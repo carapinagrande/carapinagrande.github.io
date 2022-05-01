@@ -16,6 +16,7 @@
         v-for="(_itinerary, i) in itinerary" :key="i"
         :href="_itinerary.url"
         target="blank"
+        class="mr-5"
       >
         {{_itinerary.name}}
       </v-btn>
