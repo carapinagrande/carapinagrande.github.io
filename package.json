@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy:gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "devDependencies": {
+    "@vuetify/vite-plugin": "^1.0.0-alpha.10",
+    "nuxt": "3.0.0-rc.1",
+    "push-dir": "^0.4.1"
+  },
+  "dependencies": {
+    "vuetify": "^3.0.0-beta.1"
+  }
+}
