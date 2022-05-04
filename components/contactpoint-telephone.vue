@@ -4,12 +4,15 @@
       <v-col cols="12">
         <pre>{{parse(telephone)}}</pre>
       </v-col>
-      <v-col cols="6">
+      <v-col :cols="ui?.show?.includes('whatsapp') ? 6 : 12">
         <v-btn prepend-icon="mdi-phone" :href="`tel:${telephone}`" title="Ligar para telefone" block>
           Ligar
         </v-btn>
       </v-col>
-      <v-col cols="6">
+      <v-col 
+        v-if="ui?.show?.includes('whatsapp')"
+        :cols="6"
+      >
         <v-btn 
           prepend-icon="mdi-phone" 
           :href="`https://wa.me/${telephone}?text=${message}`"
@@ -32,7 +35,11 @@
 export default {
   props: {
     telephone: String,
-    message: String
+    message: String,
+    ui: {
+      type: Object,
+      default: {},
+    }
   },
   methods: {
     parse(str) {

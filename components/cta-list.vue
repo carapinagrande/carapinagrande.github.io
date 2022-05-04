@@ -7,7 +7,7 @@
         <v-list-item-title>
           <v-btn
             :href="listItem.url"
-            target="_blank"
+            :target="listItem._ui?.target || '_blank'"
             :title="listItem.item.name"
             variant="outlined" 
             block
@@ -16,7 +16,7 @@
           </v-btn>
         </v-list-item-title>
         <v-list-item-subtitle
-          class="text-center pa-1"
+          class="text-center p-1"
           v-if="listItem.item.description"
         >
           {{listItem.item.description}}

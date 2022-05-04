@@ -13,7 +13,7 @@
             {{element.item.name}}
           </v-expansion-panel-title>
           <v-expansion-panel-text>
-            <contactpoint-telephone :telephone="element.item.telephone" />
+            <contactpoint-telephone v-bind="element.item" :ui="element._ui" />
           </v-expansion-panel-text>
         </v-expansion-panel>
       </v-expansion-panels>
