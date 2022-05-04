@@ -35,14 +35,14 @@
             />
           </v-col>
           <v-col cols="12" :lg="ui.col.lg" :sm="ui.col.sm" xs="12">
+            <contactpoint-list :itemListElement="contactpoints" />
+          </v-col>
+          <v-col cols="12" :lg="ui.col.lg" :sm="ui.col.sm" xs="12">
             <EducationalOrganizationList 
               name="Colégios e Escolas"
               :itemListElement="educationalOrganizations" 
               :uxNumberOfItemToDisplay="30"
             />
-          </v-col>
-          <v-col cols="12" :lg="ui.col.lg" :sm="ui.col.sm" xs="12">
-            <contactpoint-list :itemListElement="contactpoints" />
           </v-col>
           <!-- <v-col cols="12" lg="4" sm="6" xs="12">
             <business-list />
