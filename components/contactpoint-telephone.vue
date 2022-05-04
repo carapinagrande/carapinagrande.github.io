@@ -4,9 +4,20 @@
       <v-col cols="12">
         <pre>{{parse(telephone)}}</pre>
       </v-col>
-      <v-col cols="12">
-        <v-btn prepend-icon="mdi-phone" :href="`tel:${telephone}`" title="Ligar para Telefone" block>
+      <v-col cols="6">
+        <v-btn prepend-icon="mdi-phone" :href="`tel:${telephone}`" title="Ligar para telefone" block>
           Ligar
+        </v-btn>
+      </v-col>
+      <v-col cols="6">
+        <v-btn 
+          prepend-icon="mdi-phone" 
+          :href="`https://wa.me/${telephone}`"
+          target="_blank" 
+          title="Envia mensagem no WhatsApp" 
+          block
+        >
+          WhastApp
         </v-btn>
       </v-col>
       <!-- <v-col cols="6">

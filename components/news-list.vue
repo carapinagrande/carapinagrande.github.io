@@ -17,6 +17,7 @@
         target="blank"
       >
         <v-list-item-header>
+          <!-- TODO: transform to card -->
           <v-list-item-subtitle v-if="element.item.keywords">
             <strong v-for="keyword, i in element.item.keywords" :key="i">{{keyword}}</strong>
           </v-list-item-subtitle>

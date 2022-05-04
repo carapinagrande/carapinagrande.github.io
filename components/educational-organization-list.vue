@@ -8,7 +8,7 @@
 
     <v-card-text>
       <v-expansion-panels>
-        <v-expansion-panel v-for="(element, i) in itemListElement.slice(0, uxNumberOfItemToDisplay)" :key="i">
+        <v-expansion-panel v-for="(element, i) in _itemListElement.slice(0, uxNumberOfItemToDisplay)" :key="i">
           <v-expansion-panel-title>
             {{element.item.name}}
           </v-expansion-panel-title>
@@ -41,6 +41,9 @@ export default {
   computed: {
     displayMore() {
       return this.itemListElement.length > this.uxNumberOfItemToDisplay
+    },
+    _itemListElement() {
+      return this.itemListElement.sort((a, b) => a.item.name.localeCompare(b.item.name))
     }
   }
 }

@@ -40,3 +40,8 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+
+
+## References
+
+- https://w3c.br/traducoes/DWBP-pt-br/
