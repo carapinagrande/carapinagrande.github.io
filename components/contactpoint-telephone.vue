@@ -12,7 +12,7 @@
       <v-col cols="6">
         <v-btn 
           prepend-icon="mdi-phone" 
-          :href="`https://wa.me/${telephone}`"
+          :href="`https://wa.me/${telephone}?text=${message}`"
           target="_blank" 
           title="Envia mensagem no WhatsApp" 
           block
@@ -31,7 +31,8 @@
 <script>
 export default {
   props: {
-    telephone: String
+    telephone: String,
+    message: String
   },
   methods: {
     parse(str) {

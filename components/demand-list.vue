@@ -35,7 +35,8 @@
               <v-expansion-panel-text>
                 <contactpoint-telephone 
                   v-if="element.item.telephone"
-                  :telephone="element.item.telephone" 
+                  :telephone="element.item.telephone"
+                  :message="`Olà!Vi sua demanda de ${element.item.seeks.name} no CarapinaGrande.bairro.app.br`"
                 />
               </v-expansion-panel-text>
             </v-expansion-panel>

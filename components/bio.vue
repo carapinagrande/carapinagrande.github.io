@@ -70,6 +70,7 @@ export default {
         {item: {name: "Google Maps"}, url:"https://goo.gl/maps/HWt8aLNWoGu8gmjm6", position: 1},
         {item: {name: "Wikipédia"}, url:"https://pt.wikipedia.org/wiki/Carapina", position: 2},
         {item: {name: "Chamado de Iluminação Pública"}, url:"http://salvadoreng.com.br/chamado-serra/", position: 2},
+        {item: {name: "Lei 13465/17", description: "Dispõe sobre a regularização fundiária rural e urbana"}, url:"https://presrepublica.jusbrasil.com.br/legislacao/477399971/lei-13465-17#art-28", position: 2},
       ],
       metrics: [
         {title: "Professores Públicos", value: 200},

@@ -3,15 +3,25 @@
     <v-list-item 
       v-for="(listItem, i) in _itemListElement" :key="i"
     >
-      <v-btn
-        :href="listItem.url"
-        target="_blank"
-        :title="listItem.item.name"
-        variant="outlined" 
-        block
-      >
-        {{listItem.item.name}}
-      </v-btn>
+      <v-list-item-header>
+        <v-list-item-title>
+          <v-btn
+            :href="listItem.url"
+            target="_blank"
+            :title="listItem.item.name"
+            variant="outlined" 
+            block
+          >
+            {{listItem.item.name}}
+          </v-btn>
+        </v-list-item-title>
+        <v-list-item-subtitle
+          class="text-center pa-1"
+          v-if="listItem.item.description"
+        >
+          {{listItem.item.description}}
+        </v-list-item-subtitle>
+      </v-list-item-header>
     </v-list-item>
   </v-list>
 </template>
